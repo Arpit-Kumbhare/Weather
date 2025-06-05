@@ -45,7 +45,7 @@ const App = () => {
     }}
       className='min-h-screen flex flex-col items-center justify-center bg-blue-300 text-blue-800'>
 
-      <div className='bg-white/45 rounded-2xl px-[3rem] py-2.5'>
+      <div className='bg-white/60 rounded-2xl px-[3rem] py-2.5'>
           <div className='text-blue-400 text-3xl font-extrabold text-center mb-1.5 font-sans'>
             <a href="/">Weather</a>
           </div>
