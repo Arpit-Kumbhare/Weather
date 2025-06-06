@@ -1,12 +1,31 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive weather application built with React that provides real-time weather information for any city. The app features a clean and intuitive user interface with a beautiful background design. It utilizes Axios for efficient API calls to fetch real-time weather data from OpenWeatherMap.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time weather data using OpenWeatherMap API
+- Efficient API calls using Axios for data fetching
+- Search functionality for any city worldwide
+- Displays current weather conditions including temperature, weather description, and more
+- Responsive design with a modern UI
+- Error handling for invalid city searches
+- Loading states for better user experience
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- Axios for API requests and data fetching
+- Tailwind CSS for styling
+- OpenWeatherMap API for weather data
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies using `npm install`
+3. Create a `.env` file and add your OpenWeatherMap API key as `VITE_API_KEY`
+4. Run the development server using `npm run dev`
+
+## Note
+
+This application requires an OpenWeatherMap API key to function. You can obtain one by signing up at [OpenWeatherMap](https://openweathermap.org/api).
