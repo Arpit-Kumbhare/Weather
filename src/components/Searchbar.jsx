@@ -13,20 +13,18 @@ const Searchbar = ({fetchWeather}) => {
     }
 
   return (
-    <form className='flex mt-3 mb-4' onSubmit={handleSubmit}>
+    <form className='flex flex-col sm:flex-row gap-2 mt-3 mb-4 w-full' onSubmit={handleSubmit}>
         <input 
             type='text'
             placeholder='Enter city name'
             value={city}
             onChange={(e) => setCity(e.target.value)}
-            className='rounded-l-[5px] pl-2 bg-white/45 font-mono border-none text-[0.8rem] font-bold'
+            className='flex-1 rounded-l-md sm:rounded-l-md sm:rounded-r-none rounded-r-md px-3 py-2 bg-white/45 font-mono border-none text-xs sm:text-sm font-bold placeholder-gray-600 focus:outline-none focus:bg-white/70'
         />
 
-        <button className='rounded-r-[5px] bg-white/95 text-center text-black/60 cursor-pointer px-2 text-sm border-none font-semibold' >
+        <button className='rounded-r-md sm:rounded-l-none sm:rounded-r-md bg-white/95 text-center text-black/60 cursor-pointer px-4 sm:px-3 py-2 text-xs sm:text-sm border-none font-semibold hover:bg-white transition' >
             Search
         </button>
-
-        
     </form>
   )
 }

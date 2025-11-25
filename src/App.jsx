@@ -6,7 +6,6 @@ import axios from 'axios';
 import WeatherCard from './components/WeatherCard';
 import background from './assets/background.png'
 
-
 const App = () => {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -40,18 +39,17 @@ const App = () => {
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '100vh',
-        minWidth: '100vh'
+        minHeight: '100vh'
     }}
-      className='min-h-screen flex flex-col items-center justify-center bg-blue-300 text-blue-800'>
+      className='min-h-screen flex flex-col items-center justify-center bg-blue-300 text-blue-800 p-4'>
 
-      <div className='bg-white/60 rounded-2xl px-[3rem] py-2.5'>
-          <div className='text-blue-400 text-3xl font-extrabold text-center mb-1.5 font-sans'>
+      <div className='bg-white/60 rounded-2xl px-4 sm:px-6 md:px-12 py-4 sm:py-5 w-full max-w-md sm:max-w-lg md:max-w-2xl'>
+          <div className='text-blue-400 text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-2 sm:mb-1.5 font-sans'>
             <a href="/">Weather</a>
           </div>
           <Searchbar fetchWeather={fetchWeather}/>
-          {loading && <p className='ml-9 font-semibold text-blue-950 text-[]0.5rem'>Loading...</p>}
-          {error && <p className='ml-6 text-red-700 text-[0.75rem] font-semibold'>{error}</p>}
+          {loading && <p className='ml-2 sm:ml-4 font-semibold text-blue-950 text-xs sm:text-sm'>Loading...</p>}
+          {error && <p className='ml-2 sm:ml-3 text-red-700 text-xs sm:text-sm font-semibold'>{error}</p>}
           {weather && <WeatherCard weather={weather}/>}
       </div>
 
